@@ -1,9 +1,13 @@
 extends Area2D
 
 @onready var timer = $Timer
+@onready var mult_target_cam = %MultTargetCam
+@onready var player1 = %player1
+@onready var player2 = %player2
+
 
 func _on_body_entered(body):
-	print("You died!")
+	print("You died")
 	Engine.time_scale = 0.5
 	body.get_node("CollisionShape2D").queue_free()	
 	timer.start()
