@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://j113y5hfw447"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_ebhog"]
+[ext_resource type="Texture2D" uid="uid://o3sqy3yf5xik" path="res://assets/sprites/platforms.png" id="2_efth4"]
+
+[sub_resource type="Animation" id="Animation_yp1is"]
+resource_name = "new_animation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_25rxp"]
+_data = {
+"new_animation": SubResource("Animation_yp1is")
+}
+
+[node name="disapering platform" type="Node2D"]
+script = ExtResource("1_ebhog")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.147
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_25rxp")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_efth4")
+region_enabled = true
+region_rect = Rect2(16.6053, 16.3816, 30.3961, 8.45336)
