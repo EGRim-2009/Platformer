@@ -1,5 +1,6 @@
 # Platformer Project
-insert description here
+A 2D, 2 player, local platformer
+u and your team must battle our way to the end of the game by avoding mosters like a woos or stomp on them like trash beneath your boot
 
 
 ## Team Members
