@@ -16,6 +16,7 @@ func _on_body_entered(body):
 	if body.position.y > -10:
 		playerVariables.lives = 0
 	if playerVariables.lives == 0:
+		playerVariables.score =0
 		print("You died")
 		print(playerVariables.lives)
 		Engine.time_scale = 0.5

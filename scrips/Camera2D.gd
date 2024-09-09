@@ -6,6 +6,7 @@ extends Camera2D
 @export var min_zoom = 2.5
 @export var max_zoom = 5
 @export var margin = Vector2(400,200)
+@onready var label = $Label
 
 @onready var livesDisplay = $Lives
 
@@ -56,4 +57,10 @@ func _process(delta):
 		animated_sprite.play("hearts1")
 	elif playerVariables.lives == 0:
 		animated_sprite.play("hearts0")
+		
+	label.text = str(playerVariables.score)
+	
 	pass
+	
+	
+	

@@ -11,5 +11,6 @@ set up repo with readme, git config, and empty project files
 
 
 ## Reflections
+unexpected events invoving the absence of partisipents
 
 Your write up will go here

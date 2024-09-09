@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cu0wwpmv052us"]
+[gd_scene load_steps=9 format=3 uid="uid://cu0wwpmv052us"]
 
 [ext_resource type="Script" path="res://scrips/Camera2D.gd" id="1_jtb1u"]
 [ext_resource type="Texture2D" uid="uid://cfjqyrsq6n2yw" path="res://assets/sprites/hearts.png" id="2_f0yki"]
+[ext_resource type="Texture2D" uid="uid://dwb1dox8uk11q" path="res://assets/sprites/coin.png" id="3_ks0rv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3uyqn"]
 atlas = ExtResource("2_f0yki")
@@ -64,3 +65,17 @@ scale = Vector2(0.773438, 0.773438)
 sprite_frames = SubResource("SpriteFrames_6enmo")
 animation = &"hearts2"
 autoplay = "hearts3"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-199, -66)
+scale = Vector2(2.3, 2.3)
+texture = ExtResource("3_ks0rv")
+region_enabled = true
+region_rect = Rect2(3, 3, 10, 10)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -181.0
+offset_top = -77.0
+offset_right = -126.0
+offset_bottom = -54.0
+text = "X"
