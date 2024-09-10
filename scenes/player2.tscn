@@ -1,7 +1,11 @@
-[gd_scene load_steps=30 format=3 uid="uid://cxmixnmfihlnm"]
+[gd_scene load_steps=31 format=3 uid="uid://cxmixnmfihlnm"]
 
 [ext_resource type="Script" path="res://scrips/player2.gd" id="1_wt254"]
 [ext_resource type="Texture2D" uid="uid://c40q31wgd4dwe" path="res://assets/sprites/knight2.png" id="2_iosd2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pte8n"]
+atlas = ExtResource("2_iosd2")
+region = Rect2(64, 224, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_any1a"]
 atlas = ExtResource("2_iosd2")
@@ -105,6 +109,14 @@ region = Rect2(224, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4awjy"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pte8n")
+}],
+"loop": true,
+"name": &"crouch",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_any1a")
@@ -214,7 +226,7 @@ script = ExtResource("1_wt254")
 position = Vector2(0, 9.53674e-07)
 scale = Vector2(1.5, 1.3125)
 sprite_frames = SubResource("SpriteFrames_4awjy")
-animation = &"damaged"
+animation = &"crouch"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
