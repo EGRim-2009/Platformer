@@ -1,16 +1,30 @@
 # Platformer Project
-insert description here
+2D multiplayer platformer.
 
 
 ## Team Members
 ### fchsLemke - Mr. Lemke
 set up repo with readme, git config, and empty project files
 ### [Now add each collaborator the same way]
-* [and their contributions]
+Hugo Cumpean
+Elijah
+Logan
 * [using this format if you want bullets]
 
 
 ## Reflections
-unexpected events invoving the absence of partisipents
+unexpected events invoving the absence of participants
 
 Your write up will go here
+
+Elifagh
+croup =  big juump
+score
+end gola
+
+hugo
+two player
+towp paleyr gcamer
+lives
+damaged animation
+
