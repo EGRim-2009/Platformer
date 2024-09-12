@@ -511,11 +511,11 @@ unique_name_in_owner = true
 
 [node name="player1" parent="Players" instance=ExtResource("1_uecsp")]
 unique_name_in_owner = true
-position = Vector2(1033, -92)
+position = Vector2(1, -18)
 
 [node name="player2" parent="Players" instance=ExtResource("5_xq3c0")]
 unique_name_in_owner = true
-position = Vector2(1057, -92)
+position = Vector2(34, -19)
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
