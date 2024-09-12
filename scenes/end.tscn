@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0ot7at5xo3sq"]
+
+[ext_resource type="Script" path="res://end.gd" id="1_epjtk"]
+[ext_resource type="Texture2D" uid="uid://bx5hnnhlepj7j" path="res://assets/sprites/fruit.png" id="2_dlhnf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oaeoh"]
+atlas = ExtResource("2_dlhnf")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gx7o"]
+atlas = ExtResource("2_dlhnf")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17ny1"]
+atlas = ExtResource("2_dlhnf")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_psghb"]
+atlas = ExtResource("2_dlhnf")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cnja8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oaeoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gx7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17ny1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_psghb")
+}],
+"loop": true,
+"name": &"end_fruit",
+"speed": 10.0
+}]
+
+[node name="end" type="Node2D"]
+script = ExtResource("1_epjtk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cnja8")
+animation = &"end_fruit"
+autoplay = "end_fruit"
+frame_progress = 0.674668
