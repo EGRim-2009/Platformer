@@ -1,0 +1,28 @@
+Team Points:
+  20/20 points for a working platformer with a filled out README
+  20/20 points for having enough sizable changes (4 changes if in a group of 1, 5 changes if in a group of 2, 6 changes if in a group of 3, 8 changes if in a group of 4)
+  10/10 points for following the PR process correctly, including reviewing your teammates’ code (not required for solo projects, instead points will come from having enough changes)
+
+Total: 50/50
+
+Individual Points:
+  10 points for contributing features to your game (no hard carries)
+  -Hugo	- 10/10
+  -Eli	- 10/10
+  -Logan-  0/10
+  5 points for thoughtful reflection added in the README
+  -Hugo	- 4/5
+  -Eli	- 4/5
+  -Logan- 0/5
+  5 points for contributing to code reviews in PR’s
+  -Hugo	- 4/5
+  -Eli	- 4/5
+  -Logan- 3/5
+
+  Overall I'd just like a little more feedback in the PRs, that's all
+
+
+Notes:
+*End Goal - Added a fruit at the end
+	-Fruit isn't an Area2D, so it wouldn't let you add the signal
+
